@@ -1,0 +1,11 @@
+# SnakeGame
+- bước 1 : tạo thẻ canvas
+- bước 2 : Hiển thị snake với 3 khúc vuông , khúc đầu lớn
+- bước 3 : tạo khung viền giới hạn
+- bước 4 : di chuyển được snake lên xuống trái phải với tốc độ
+- bước 5 : tạo một điểm mồi với độ rộng tại vị trí bất kì
+- bước 6 : di chuyển snake ăn điểm đuôi của snake sẽ dài ra 1 nấc, sẽ ra 1 điểm mồi mới tại vị trí bất kì.
+- bước 7 : cứ 5 điểm mồi nhỏ sẽ xuất hiện 1 điểm mồi to tại 1 điểm bất kì với số điểm thưởng lớn hơn điểm mồi nhỏ.
+- bước 8 : snake khi di chuyển và chạm vào snake hoặc va chạm vào viền sẽ thua .
+- bước 9 : hiển thị số điểm snake ăn được tại góc. 1 điểm nhỏ là 10 điểm . 1 điểm to là 50 điểm . cộng dồn số điểm snake ăn được
+- bước 10 : có thể tạo các chướng ngại vật khi snake đạt đến 500 điểm để tăng độ khó cho game.
