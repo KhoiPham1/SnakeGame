@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SnakeGame</title>
+
+</head>
+<body onkeydown="move(event);">
+<canvas id="myCanvas" width="500px" height="500px" style="border: 1px solid black"></canvas>
+<script src="snake.js"></script>
+<script src="food.js"></script>
+<script src="board.js"></script>
+<script>
+    var canvas = document.getElementById("myCanvas");
+    var food = new Food(Math.floor(Math.random()*500),Math.floor(Math.random()*500));
+    var snake = new Snake(50,50);
+    var board = new Board(canvas);
+    board.snake = snake;
+    board.food = food;
+    board.render();
+
+    function move(event) {
+        switch (event.which) {
+            case 37:
+                snake.moveLeft();
+                board.render();
+                break;
+            case 39:
+                snake.moveRight();
+                board.render();
+                break;
+            case 38:
+                snake.moveUp();
+                board.render();
+                break;
+            case 40:
+                snake.moveDown();
+                board.render();
+                break;
+        }
+
+    }
+</script>
+</body>
+</html>
